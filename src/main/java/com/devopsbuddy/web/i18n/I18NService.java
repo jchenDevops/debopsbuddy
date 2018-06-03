@@ -15,8 +15,8 @@ import java.util.Locale;
 @Service
 public class I18NService {
 
-    /** The application logger */
-    private static final Logger LOG = LoggerFactory.getLogger(I18NService.class);
+	/** The application logger */
+	private static final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger(I18NService.class);
 
     @Autowired
     private MessageSource messageSource;

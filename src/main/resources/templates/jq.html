@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First JQuery app</title>
+	<script scr="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id ="messageDiv">
+		
+	
+	</div>
+	
+	<script type="text/javascript" language ="javascript">
+	
+		$( document ).ready( function() {
+			
+			$("#messageDiv").html(emp.name + ",Salalry:" + emp.getSalary());
+			$("#messageDiv").click(function(event){
+				
+			console.log("clicked" + event.target);
+			});
+			
+		});
+	
+		var emp = {
+			name: "James Chen",
+			emp_id: 1,
+			getSalary: function() { return 10000;}
+		};
+	
+	</script>
+	
+</body>
+</html>
